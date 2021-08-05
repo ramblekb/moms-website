@@ -1,7 +1,5 @@
 import React from 'react';
-// import ButtonAppBar from '../components/ButtonAppBar';
-// import Layout from '../components/Layout';
-import SimpleMenu from '../components/SimpleMenu';
+import PicOne from '../components/PicOne';
 
 function About(){
 
@@ -10,6 +8,7 @@ return (
 <SimpleMenu />
 {/* <ButtonAppBar />
 <Layout /> */}
+<PicOne />
 
 </div>
 )

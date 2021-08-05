@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { ImageListItem } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Layou() {
+export default function Layout() {
   const classes = useStyles();
 
   function FormRow() {
@@ -36,6 +37,7 @@ export default function Layou() {
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
+      <ImageListItem />
         <Grid container item xs={12} spacing={3}>
           <FormRow />
         </Grid>
@@ -43,7 +45,7 @@ export default function Layou() {
           <FormRow />
         </Grid>
         <Grid container item xs={12} spacing={3}>
-          <FormRow />
+          <FormRow></FormRow>
         </Grid>
       </Grid>
     </div>
